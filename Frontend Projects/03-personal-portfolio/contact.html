@@ -18,8 +18,8 @@
             --primary-color: #E42278;
             --secondary-color: #ED7BAB;
             --primary-shadow: #8b8eaf;
-            --secondary-shadow: #FFFFFF;
-            --bottom-margin: 0.5rem;
+            --secondary-shadow: #FFFFFF;/ 
+            --bottom-margin: 0.5rem; 
             --bottom-margin-2: 1rem;
             --line-height: 1.5rem;
             --transtion: 0.4s;
@@ -51,41 +51,48 @@
             box-sizing: border-box;
         }
 
-        ul {
+        ul 
+        {
             list-style-type: none;
         }
 
-        a {
+        a 
+        {
             text-decoration: none;
             color: var(--primary-color);
         }
 
-        a:hover {
+        a:hover 
+        {
             color: var(--secondary-color);
         }
 
-        nav a {
+        nav a 
+        {
             color: var(--primary-color);
             float: right;
             padding: 10px;
             margin: auto;
         }
 
-        nav a:hover {
+        nav a:hover 
+        {
             color: var(--secondary-color);
-            border-bottom: 2px solid var(--secondary-color);
         }
 
-        nav ul {
+        nav ul 
+        {
             display: flex;
             gap: 1.5rem;
         }
 
-        nav ul li {
+        nav ul li 
+        {
             font-weight: var(--bold-font);
         }
 
-        .logo {
+        .logo 
+        {
             font-size: 2rem;
             font-weight: bold;
             font-style: normal;
@@ -95,7 +102,7 @@
 
         body
         {
-            background-color: #000000;  
+            background-color: #000000;
         }
 
         form
@@ -187,16 +194,15 @@
             <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
     </nav>
-    
 </body>
 <h2 class="contactSection">Contact Me</h2>
 <section class="contact" id="contact">
     <div class="contact-form-area">
         <div class="contact-form">
             <form id="contact-form">
-                <label for="fname">First name:</label><br>
+                <label for="fname">First name</label><br>
                 <input type="text" id="fname" name="fname" placeholder="Your first name..." class="userInput"><br>
-                <label for="lname">Last name:</label><br>
+                <label for="lname">Last name</label><br>
                 <input type="text" id="lname" name="lname"placeholder="Your last name..." class="userInput"><br>
                 <label for="message">Message</label><br>
                 <textarea rows="10" name="message" placeholder="write something" id="message" class="userInput"></textarea><br>
