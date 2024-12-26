@@ -6,88 +6,199 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
-
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/1favicon-32x32.png">
     <style>
-        .topnav {
-            overflow: hidden;
-            background-color: #333;
+         :root 
+        {
+            --normal-font: 400;
+            --bold-font: 700;
+            --bolder-font: 850;
+            --bg-color: #000000;
+            --primary-color: #E42278;
+            --secondary-color: #ED7BAB;
+            --primary-shadow: #8b8eaf;
+            --secondary-shadow: #FFFFFF;
+            --bottom-margin: 0.5rem;
+            --bottom-margin-2: 1rem;
+            --line-height: 1.5rem;
+            --transtion: 0.4s;
         }
 
-        .topnav a {
-            float: right;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
+        nav 
+        {
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem 3.5rem;
+            background-color: var(--bg-color);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        html 
+        {
+            scroll-behavior: smooth;
+        }
+
+        * 
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul 
+        {
+            list-style-type: none;
+        }
+
+        a 
+        {
             text-decoration: none;
-            font-size: 17px;
+            color: var(--primary-color);
+        }
+
+        a:hover 
+        {
+            color: var(--secondary-color);
+        }
+
+        nav a 
+        {
+            color: var(--primary-color);
+            float: right;
+            padding: 10px;
             margin: auto;
         }
 
-        .topnav a:hover {
-            background-color: #ddd;
-            color: black;
+        nav a:hover 
+        {
+            color: var(--secondary-color);
         }
 
-        .topnav a.active {
-            background-color: #04AA6D;
-            color: white;
+        nav ul 
+        {
+            display: flex;
+            gap: 1.5rem;
         }
 
-        h1 {
+        nav ul li 
+        {
+            font-weight: var(--bold-font);
+        } 
+
+        h1 
+        {
             text-align: center;
         }
 
-        p {
+        p 
+        {
             text-align: center;
             color: #808080;
         }
+
+        body
+        {
+            color:white;
+            background-color: black;
+        }
+        section
+        {
+            width: 30%;
+            display: inline-table;
+            align-items: baseline;
+            margin-top: 5%;
+            margin-left: 3%;
+        }
+
+
+        footer
+        {
+            clear:both;
+            margin-bottom: 0;
+            margin-top: 5%;
+            display: inline-block;
+            margin-left: 3%;
+        }
+        
+        .logo 
+        {
+            font-size: 2rem;
+            font-weight: bold;
+            font-style: normal;
+            float: right;
+            color: var(--secondary-color);
+        } 
     </style>
 </head>
-
 <body>
-    <div class="topnav">
-        <a class="active" href="basicWebsite.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="articles.html">Articles</a>
-        <a href="contact.html">Contact</a>
-    </div>
+<nav>
+    <span class="logo">
+        jn
+    </span>
+    <ul class="topnav">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="articles.html" class="nav-link">Articles</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+</nav>
     <header>
-        <h3>jadda norvel</h3>
         <h1>Frontend Developer</h1>
         <p>html only with proper layout, no styling</p>
     </header>
 
-    <h3>Projects</h3>
-    <div class="sidenav">
-        <a href="#projects">HTML Only Portfolio</a><br>
-        <a href="#projects">Calculator</a><br>
-        <a href="#projects">Quiz App</a><br>
-        <a href="#projects">Countdown Timer</a><br>
-        <a href="#projects">Product Upcoming Page</a>
+    <section class="one">
+    <div>
+        <h3>Projects</h3>
+            <a href="#projects">HTML Only Portfolio</a><br>
+            <a href="#projects">Calculator</a><br>
+            <a href="#projects">Quiz App</a><br>
+            <a href="#projects">Countdown Timer</a><br>
+            <a href="#projects">Product Upcoming Page</a>
     </div>
-    <h3>Work Experience</h3>
-    <h4>roadmap.sh</h4>
-    <h4>Solved all the frontend projects</h4>
-    <a href="https://roadmap.sh/account/update-profile" title="Visit my Profile">Visit my Profile</a>
+    </section>
 
-    <h3>OpenSource Work</h3>
-    <h4>Contributed to 50 opensource projects. Made my own projects with 200 GitHib Stars.</h4>
-    <a href="https://github.com/JaddaNN" title="Visit my Profile">Visit my GitHub Profile</a>
+    <section class="two">
+    <div>
+        <h3>Work Experience</h3>
+        <h4>roadmap.sh</h4>
+        <h4>Solved all the frontend projects</h4>
+        <a href="https://roadmap.sh/account/update-profile" title="Visit my Profile">Visit my Profile</a>
+    </div>
+    <br>
+    <br>
+    <div>
+        <h3>OpenSource Work</h3>
+        <h4>Contributed to 50 opensource projects. Made my own projects with 200 GitHib Stars.</h4>
+        <a href="https://github.com/JaddaNN" title="Visit my Profile">Visit my GitHub Profile</a>
+    </div>
+    </section>
 
-    <h3>Education</h3>
-    <h4>Graduated with 3.76 out of 4 CPGA. Won Acme Hackathon. Organized 30 sessions.</h4>
-    <h4>Courses I took:</h4>
-    <ul>
-        <li>Object Oriented Programming</li>
-        <li>Data Structures and Algorithms</li>
-        <li>Web Engineering</li>
-        <li>Artificial Intelligence</li>
-        <li>Human Computer Interaction</li>
-        <li>Computer Graphics</li>
-        <li>Database Management Systems</li>
-        <li>Distributed Database Systems</li>
-        <li>Discreet Mathematics</li>
-    </ul>
+    <section class="three">
+        <div>
+            <h3>Education</h3>
+            <h4>Graduated with 3.76 out of 4 CPGA. Won Acme Hackathon. Organized 30 sessions.</h4>
+            <br>
+            <h4>Courses I took:</h4>
+            <ul>
+                <li>Object Oriented Programming</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Web Engineering</li>
+                <li>Artificial Intelligence</li>
+                <li>Human Computer Interaction</li>
+                <li>Computer Graphics</li>
+                <li>Database Management Systems</li>
+                <li>Distributed Database Systems</li>
+                <li>Discreet Mathematics</li>
+            </ul>
+        </div>
+    </section>
+
     <footer>
         <h3>Reviews from my Teachers</h3>
         <ul>
@@ -101,5 +212,4 @@
         <h4> all rights reserved 2025</h4>
     </footer>
 </body>
-
 </html>
